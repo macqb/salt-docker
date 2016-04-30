@@ -1,4 +1,4 @@
-FROM debian:stable
+FROM debian:jessie
 
 MAINTAINER Bart van Raalte <bart.van.raalte@merapar.com>
 
