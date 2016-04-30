@@ -24,6 +24,7 @@ RUN echo 'deb http://debian.saltstack.com/debian jessie-saltstack main' >> /etc/
 
 VOLUME ["/etc/salt/pki", \
         "/etc/salt/master.d", \
+        "/etc/salt/cloud.maps.d", \
         "/etc/salt/cloud.conf.d", \
         "/etc/salt/cloud.profiles.d", \
         "/etc/salt/cloud.providers.d", \
