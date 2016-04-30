@@ -8,10 +8,9 @@ RUN apt-get -y update && \
     apt-get -y install wget
 
 # Install Salt
-RUN echo 'deb http://debian.saltstack.com/debian jessie-saltstack main' >> /etc/apt/sources.list && \
-    wget -q -O- "http://debian.saltstack.com/debian-salt-team-joehealy.gpg.key" | apt-key add - && \
+RUN wget -O - https://repo.saltstack.com/apt/debian/8/amd64/latest/SALTSTACK-GPG-KEY.pub | apt-key add - && \
+    echo 'deb http://repo.saltstack.com/apt/debian/8/amd64/latest jessie main' >> /etc/apt/sources.list && \
     apt-get -y update && \
-    apt-get -y upgrade && \
     apt-get -y install \
       salt-common \
       salt-master \
