@@ -1,6 +1,6 @@
 FROM debian:jessie
 
-MAINTAINER Bart van Raalte <bart.van.raalte@merapar.com>
+MAINTAINER Damon Hoxworth <damon@macqb.com>
 
 # Update System
 RUN apt-get -y update && \
