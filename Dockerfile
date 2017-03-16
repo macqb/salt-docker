@@ -35,6 +35,10 @@ VOLUME ["/etc/salt/pki", \
 COPY run.sh /usr/local/bin/
 RUN chmod +x \
     /usr/local/bin/run.sh
+    
+COPY startsalt.sh /usr/local/bin/
+RUN chmod +x \
+    /usr/local/bin/startsalt.sh
 
 EXPOSE 4505 4506
 
