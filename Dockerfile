@@ -36,9 +36,9 @@ COPY run.sh /usr/local/bin/
 RUN chmod +x \
     /usr/local/bin/run.sh
     
-COPY startsalt.sh /usr/local/bin/
+COPY saltstart.sh /usr/local/bin/
 RUN chmod +x \
-    /usr/local/bin/startsalt.sh
+    /usr/local/bin/saltstart.sh
 
 EXPOSE 4505 4506
 
